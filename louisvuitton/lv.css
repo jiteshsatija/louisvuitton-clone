@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bebas Neue', 'Inter', 'Open Sans', 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/*header*/
+
+.navbar {
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    height: 4rem;
+    z-index: 4; 
+}
+
+.nav-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 30px;
+    width: 10%;
+}
+
+.nav-menu {
+    padding-right: 15px;
+}
+
+.nav-left p{
+    padding-right: 12px;
+    font-size: medium;
+}
+
+.nav-left i{
+    padding-bottom: 10px;
+    padding-right: 12px;
+    font-weight: 300;
+}
+
+.nav-logo {
+    text-align: center;
+    padding: 0.75rem;
+}
+
+.nav-logo h2 {
+    font-weight: 600;
+}
+
+.nav-right {
+    padding: 0.75rem;
+    font-size: medium;
+}
+
+.nav-call,.nav-wish,.nav-my{
+    padding-right: 11px;
+}
+
+.navbar{
+    max-width: 100%;
+}
+
+.section1 {
+    height: 450px;
+}
+
+#BGVideo {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin-top: -4rem;
+}
+
+.sec1-overlay {
+    width: 15rem;
+    height: 3rem;
+    padding: 0.875rem 2.73688rem 0.875rem 2.74875rem;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 61.25rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.86819rem;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px; 
+    z-index: 1;
+    flex-shrink: 0;
+    border: 2px solid white;
+}
+
+.sec1-overlay p{
+    color: #FFF;
+    text-align: center;
+    font-size: 1.0125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem; 
+    letter-spacing: 0.025rem;
+    padding-top: 5px;
+}
+
+.sec1-head h2{
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.86819rem;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px; 
+    z-index: 1;
+}
+
+/*main section */
+
+
+
+
+
