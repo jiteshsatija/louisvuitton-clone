@@ -7,24 +7,34 @@
 body {
     font-family: 'Bebas Neue', 'Inter', 'Open Sans', 'Roboto', sans-serif;
     margin: 0;
+    overflow-x: hidden;
 }
 
 /*header*/
 
 .navbar {
+    position: fixed;
     width: 100%;
     background-color: transparent;
     color: white;
-    height: 4rem;
+    height: 5rem;
     z-index: 4; 
+}
+
+.navbar:hover{
+    background-color: white;
+    border-bottom:1px solid black ;
+    color: black;
+    animation-delay: 1ms;
 }
 
 .nav-left {
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    padding: 30px;
+    padding: 0.65rem;
     width: 10%;
+    padding-left: 25px;
 }
 
 .nav-menu {
@@ -44,7 +54,7 @@ body {
 
 .nav-logo {
     text-align: center;
-    padding: 0.75rem;
+    padding: 0.755128rem;
 }
 
 .nav-logo h2 {
@@ -52,12 +62,13 @@ body {
 }
 
 .nav-right {
-    padding: 0.75rem;
+    margin-right: 1rem;
+    padding-top: 0.755128rem;
     font-size: medium;
 }
 
 .nav-call,.nav-wish,.nav-my{
-    padding-right: 11px;
+    padding-right: 15px;
 }
 
 .navbar{
@@ -66,9 +77,14 @@ body {
 
 .section1 {
     height: 450px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 #BGVideo {
+    position: absolute;
+    object-fit: cover;
     top: 0;
     right: 0;
     bottom: 0;
@@ -98,6 +114,8 @@ body {
     z-index: 1;
     flex-shrink: 0;
     border: 2px solid white;
+    backdrop-filter: blur(15px) brightness(100%);
+    -webkit-backdrop-filter: blur(15px) brightness(100%);
 }
 
 .sec1-overlay p{
@@ -108,19 +126,22 @@ body {
     font-weight: 400;
     line-height: 1.25rem; 
     letter-spacing: 0.025rem;
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
-.sec1-head h2{
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.sec1-head{
+    align-self: center;
+    justify-self: center;
+    padding-left: 50px;
+    top: 70%;
+    left: 30%;
+    color: #FFF;
     font-family: 'Bebas Neue', sans-serif;
     font-family: 'Inter', sans-serif;
     font-family: 'Roboto', sans-serif;
-    font-size: 0.86819rem;
+    font-size: 0.76819rem;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     text-align: center;
     padding: 20px; 
     z-index: 1;
@@ -128,7 +149,887 @@ body {
 
 /*main section */
 
+.main{
+    background-color: #FFF;
+}
+
+.section{
+    padding-top: 170px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+.sec-img{
+    width: 100%;
+}
+
+.box,.box1,.box2{
+    margin: 30px;
+    flex-shrink: 0;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 471px;
+    width:28%;
+
+ }
+
+.section2{
+    max-width: 100%;
+    height: 45rem;
+    flex-shrink: 0;
+    background-image: url(Picture\ →\ Women_Cruise_2024_WW_HP_Push_DI3.jpg.jpeg);
+    background-size: 100% 100%;;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 
+.img-info{
+    font-weight: 600;
+    padding-right: 360px;
+    padding-left: 35px;
+}
 
+.img-info2{
+    font-weight: 600;
+    padding-right: 360px;
+    padding-left: 35px;
+}
+.img-info3{
+    font-weight: 600;
+    padding-right: 360px;
+    padding-left: 20px;
+}
 
+.sec2-head {
+    padding-bottom: 4rem;
+    color: #FFF;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.76819rem;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sec2-overlay {
+    margin-bottom: 1rem;
+    width: 15rem;
+    height: 3rem;
+    border: 2px solid white;
+    border-radius: 61.25rem;
+    backdrop-filter: blur(15px) brightness(100%);
+    -webkit-backdrop-filter: blur(15px) brightness(100%);
+}
+
+.sec2-overlay p{
+    color: #FFF;
+    text-align: center;
+    font-size: 1.0125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem; 
+    letter-spacing: 0.025rem;
+    margin-top: 20px;
+}
+    
+.section3{
+    height: 750px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.section3 #BGVideo2{
+    object-fit: cover;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin-top: -4rem;
+}
+
+.sec3-head {
+    padding-bottom: 4rem;
+    color: #FFF;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.76819rem;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sec3-overlay {
+    padding-bottom: 3rem;
+    margin-bottom: 1rem;
+    width: 15rem;
+    height: 3rem;
+    border: 2px solid white;
+    border-radius: 61.25rem;
+    backdrop-filter: blur(15px) brightness(100%);
+    -webkit-backdrop-filter: blur(15px) brightness(100%);
+}
+
+.sec3-overlay p{
+    color: #FFF;
+    text-align: center;
+    font-size: 1.0125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem; 
+    letter-spacing: 0.025rem;
+    padding-top: 20px;
+}
+
+.section4{
+    max-width: 100%;
+    height: 45rem;
+    flex-shrink: 0;
+    background-image: url(Picture\ →\ LV_Services_Holiday_WW_HP_Push_DI3.jpg.jpeg);
+    background-size: 100% 100%;;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sec4-head {
+    padding-bottom: 4rem;
+    color: #FFF;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.76819rem;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sec4-overlay {
+    padding-bottom: 3rem;
+    margin-bottom: 1rem;
+    width: 15rem;
+    height: 3rem;
+    border: 2px solid white;
+    border-radius: 61.25rem;
+    backdrop-filter: blur(15px) brightness(100%);
+}
+
+.sec4-overlay p{
+    color: #FFF;
+    text-align: center;
+    font-size: 1.0125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem; 
+    letter-spacing: 0.025rem;
+    margin: 20px;
+}
+    
+.footer {
+    padding-right: 30px;
+    position: relative;
+    width: 1920px;
+    height: 803px;
+    background-color: #ffffff;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-color: #eae8e4;
+  }
+  
+  .footer .div-lv-footer {
+    position: absolute;
+    width: 1920px;
+    height: 385px;
+    top: 1px;
+    right: 130px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #eae8e4;
+  }
+  
+  .footer .section {
+    width: 408px;
+    left: 160px;
+    position: absolute;
+    height: 304px;
+    top: 40px;
+  }
+  
+  .footer .help {
+    position: absolute;
+    width: 23px;
+    height: 13px;
+    top: 0;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 500;
+    color: #19110b;
+    font-size: 8px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .footer .overlap {
+    width: 278px;
+    top: 40px;
+    left: 0;
+    position: absolute;
+    height: 19px;
+  }
+  
+  .footer .list-item-a-client {
+    position: absolute;
+    width: 181px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 11.8px;
+    letter-spacing: 0.4px;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+  
+  .footer .list-item-link {
+    width: 97px;
+    top: 1px;
+    left: 180px;
+    background-color: #ffffff01;
+    overflow: hidden;
+    box-shadow: 0px 2px 0px -1px #19110b;
+    position: absolute;
+    height: 18px;
+  }
+  
+  .footer .text-wrapper {
+    position: absolute;
+    width: 98px;
+    height: 18px;
+    top: -1px;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+  
+  .footer .list-item-you-can {
+    position: absolute;
+    width: 81px;
+    height: 18px;
+    top: 40px;
+    left: 278px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 11.6px;
+    letter-spacing: 0.4px;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+  
+  .footer .div-wrapper {
+    position: absolute;
+    width: 24px;
+    height: 18px;
+    top: 61px;
+    left: 0;
+    background-color: #ffffff01;
+    overflow: hidden;
+    box-shadow: 0px 2px 0px -1px #19110b;
+  }
+  
+  .footer .div {
+    position: absolute;
+    width: 24px;
+    height: 18px;
+    top: -1px;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 11.2px;
+    letter-spacing: 0.4px;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+  
+  .footer .overlap-group {
+    width: 66px;
+    top: 60px;
+    left: 24px;
+    position: absolute;
+    height: 19px;
+  }
+  
+  .footer .list-item-or {
+    width: 20px;
+    top: 0;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    line-height: 20px;
+    white-space: nowrap;
+    position: absolute;
+    height: 18px;
+  }
+  
+  .footer .list-item-link-2 {
+    position: absolute;
+    width: 47px;
+    height: 18px;
+    top: 1px;
+    left: 20px;
+    background-color: #ffffff01;
+    overflow: hidden;
+    box-shadow: 0px 2px 0px -1px #19110b;
+  }
+  
+  .footer .text-wrapper-2 {
+    position: absolute;
+    width: 47px;
+    height: 18px;
+    top: -1px;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 11.4px;
+    letter-spacing: 0.4px;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+  
+  .footer .list-item {
+    position: absolute;
+    width: 4px;
+    height: 18px;
+    top: 60px;
+    left: 91px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+  
+  .footer .list-item-link-FAQ-s {
+    position: absolute;
+    width: 34px;
+    height: 18px;
+    top: 99px;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .footer .list-item-link-3 {
+    position: absolute;
+    width: 74px;
+    height: 18px;
+    top: 139px;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 11.2px;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .footer .list-item-link-4 {
+    position: absolute;
+    width: 35px;
+    height: 18px;
+    top: 179px;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 10.7px;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .footer .section-2 {
+    width: 408px;
+    left: 568px;
+    position: absolute;
+    height: 304px;
+    top: 40px;
+  }
+  
+  .footer .services {
+    position: absolute;
+    width: 46px;
+    height: 13px;
+    top: 0;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 8.1px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .footer .list-item-link-5 {
+    position: absolute;
+    width: 42px;
+    height: 18px;
+    top: 43px;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 11.3px;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .footer .list-item-link-6 {
+    position: absolute;
+    width: 85px;
+    height: 18px;
+    top: 83px;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 11px;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .footer .list-item-link-art {
+    position: absolute;
+    width: 75px;
+    height: 18px;
+    top: 123px;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 11.4px;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .footer .list-item-link-7 {
+    position: absolute;
+    width: 115px;
+    height: 18px;
+    top: 163px;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 11.7px;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .footer .section-3 {
+    width: 408px;
+    left: 976px;
+    position: absolute;
+    height: 304px;
+    top: 40px;
+  }
+  
+  .footer .about-louis-vuitton {
+    position: absolute;
+    width: 116px;
+    height: 13px;
+    top: 0;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 8.4px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .footer .list-item-link-8 {
+    position: absolute;
+    width: 84px;
+    height: 18px;
+    top: 43px;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 11px;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .footer .list-item-link-arts {
+    position: absolute;
+    width: 80px;
+    height: 18px;
+    top: 83px;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 11.3px;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .footer .list-item-link-la {
+    position: absolute;
+    width: 60px;
+    height: 18px;
+    top: 123px;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 11.7px;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .footer .list-item-link-9 {
+    position: absolute;
+    width: 76px;
+    height: 18px;
+    top: 163px;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 11.2px;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .footer .list-item-link-10 {
+    position: absolute;
+    width: 69px;
+    height: 18px;
+    top: 203px;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 10.9px;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .footer .list-item-link-11 {
+    position: absolute;
+    width: 45px;
+    height: 18px;
+    top: 243px;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 11.4px;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .footer .list-item-link-12 {
+    position: absolute;
+    width: 138px;
+    height: 18px;
+    top: 283px;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 10.9px;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .footer .section-4 {
+    width: 376px;
+    left: 1384px;
+    position: absolute;
+    height: 304px;
+    top: 40px;
+  }
+  
+  .footer .connect {
+    position: absolute;
+    width: 52px;
+    height: 13px;
+    top: 0;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 9.1px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .footer .list-item-link-13 {
+    position: absolute;
+    width: 43px;
+    height: 18px;
+    top: 41px;
+    left: 0;
+    background-color: #ffffff01;
+    overflow: hidden;
+    box-shadow: 0px 2px 0px -1px #19110b;
+  }
+  
+  .footer .text-wrapper-3 {
+    position: absolute;
+    width: 44px;
+    height: 18px;
+    top: -1px;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 11.6px;
+    letter-spacing: 0.4px;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+  
+  .footer .list-item-for-first {
+    position: absolute;
+    width: 293px;
+    height: 18px;
+    top: 40px;
+    left: 43px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 11px;
+    letter-spacing: 0.4px;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+  
+  .footer .list-item-videos {
+    width: 41px;
+    top: 60px;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 11.2px;
+    letter-spacing: 0.4px;
+    line-height: 20px;
+    white-space: nowrap;
+    position: absolute;
+    height: 18px;
+  }
+  
+  .footer .list-item-button {
+    position: absolute;
+    width: 56px;
+    height: 16px;
+    top: 100px;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 11.5px;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .footer .list-item-button-2 {
+    position: absolute;
+    width: 46px;
+    height: 16px;
+    top: 433px;
+    left: 1594px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 11.4px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .footer .list-item-link-legal {
+    position: absolute;
+    width: 88px;
+    height: 18px;
+    top: 432px;
+    left: 1672px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    font-size: 11.4px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .footer .list-item-link-india {
+    position: absolute;
+    width: 16px;
+    height: 12px;
+    top: 435px;
+    left: 164px;
+  }
+  
+  .footer .list-item-link-india-2 {
+    position: absolute;
+    width: 29px;
+    height: 18px;
+    top: 433px;
+    left: 188px;
+    background-color: #ffffff01;
+    overflow: hidden;
+    box-shadow: 0px 2px 0px -1px #19110b;
+  }
+  
+  .footer .text-wrapper-4 {
+    width: 29px;
+    height: 18px;
+    top: -1px;
+    left: 0;
+    font-size: 12px;
+    text-align: right;
+    line-height: 16px;
+    white-space: nowrap;
+    position: absolute;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #19110b;
+    letter-spacing: 0.4px;
+  }
+  
+  .footer .p {
+    position: absolute;
+    width: 228px;
+    height: 16px;
+    top: 489px;
+    left: 160px;
+    opacity: 0.7;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 700;
+    color: #19110b;
+    font-size: 10.1px;
+    letter-spacing: 0.4px;
+    line-height: 24px;
+    white-space: nowrap;
+  }
+  
+  .footer .louis-vuitton {
+    width: 133px;
+    height: 87px;
+    top: 538px;
+    left: 160px;
+    opacity: 0.7;
+    font-size: 9.6px;
+    line-height: 24px;
+    position: absolute;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 700;
+    color: #19110b;
+    letter-spacing: 0.4px;
+  }
+  
+  .footer .text-wrapper-5 {
+    position: absolute;
+    width: 389px;
+    height: 24px;
+    top: 642px;
+    left: 160px;
+    opacity: 0.7;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 700;
+    color: #19110b;
+    font-size: 9.6px;
+    letter-spacing: 0.4px;
+    line-height: 24px;
+    white-space: nowrap;
+  }
+  
+  .footer .text-wrapper-6 {
+    position: absolute;
+    width: 202px;
+    height: 16px;
+    top: 489px;
+    left: 976px;
+    opacity: 0.7;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 700;
+    color: #19110b;
+    font-size: 10.1px;
+    letter-spacing: 0.4px;
+    line-height: 24px;
+    white-space: nowrap;
+  }
+  
+  .footer .louis-vuitton-india {
+    width: 204px;
+    height: 87px;
+    top: 538px;
+    left: 976px;
+    opacity: 0.7;
+    font-size: 9.8px;
+    line-height: 24px;
+    position: absolute;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 700;
+    color: #19110b;
+    letter-spacing: 0.4px;
+  }
+  
+  .footer .svg1 {
+    position: absolute;
+    width: 154px;
+    height: 16px;
+    top: 731px;
+    left: 700px;
+    object-fit: cover;
+  }
+  

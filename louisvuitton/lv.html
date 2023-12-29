@@ -6,6 +6,7 @@
     <title>LOUISVUITTON</title>
     <link rel="stylesheet" href="lv.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css" integrity="sha512-8RxmFOVaKQe/xtg6lbscU9DU0IRhURWEuiI0tXevv+lXbAHfkpamD4VKFQRto9WgfOJDwOZ74c/s9Yesv3VvIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,13 +16,13 @@
     <div class="wrapper">
         <header>
             <div class="navbar d-flex flex-wrap justify-content-between align-items-center ">
-                <div class="nav-left">
+                <div class="nav-left d-flex ">
                     <div class="nav-menu d-flex justify-content-center align-items-center ">
-                        <i class="fa-solid fa-bars"></i>
+                        <i class="fa-duotone fa-bars"></i>
                         <p>Menu</p>
                     </div>
                     <div class="nav-search d-flex justify-content-center align-items-center ">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-thin fa-magnifying-glass"></i>
                         <p>Search</p>
                     </div>
                 </div>
@@ -40,13 +41,12 @@
                     </div>
                 </div>
             </div>
-            <div class="section1 overflow-hidden ">
-                <video class="position-absolute object-fit-cover " autoplay muted loop plays-inline id="BGVideo">
+            <div class="section1 d-flex flex-column overflow-hidden ">
+                <video class="position-absolute object-fit-cover " autoplay loop plays-inline id="BGVideo">
                     <source src="lv media/vid1.mp4" type="video/mp4">
                 </video>
-                <div class="sec1-head">
+                <div class="sec1-head d-flex justify-content-center align-items-center position-absolute text-white">
                     <h2>The Holiday Season with Louis Vuitton</h2>
-
                 </div> 
                 <div class="sec1-overlay p-1 d-flex justify-content-center align-items-center  position-absolute bg-transparent text-white ">
                     <p class="text-center">Discover the Gift Guide</p>
@@ -54,13 +54,111 @@
             </div>
         </header>
         <div class="main">
-            <div class="section d-flex justify-content-evenly">
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-            </div>
+            <div class="section d-flex justify-content-center align-items-center  flex-column  ">
+                <div class="sec-img d-flex justify-content-evenly align-items-center">
+                    <div class="box" style="background-image: url(box.png);" style="margin-right: 10px;" ></div>
+                    <div class="box1"style="background-image: url(box2.png);"style="margin-right: 10px;"></div>
+                    <div class="box2"style="background-image: url(box3.png);"style="margin-right: 10px;"></div>
+                </div>
+                <div class="sec-img-info d-flex justify-content-between align-items-start   ">
+                    <div class="img-info">Women's Bags</div>
+                    <div class="img-info2">Women's Sneakers</div>
+                    <div class="img-info3">Men's Bags</div>
+                </div>
 
+            </div>
+                
+            <div class="section2 d-flex justify-content-center align-items-end  ">
+                <div class="sec2-head d-flex justify-content-center align-items-center position-absolute text-white">
+                    <h2>Cruise 2024</h2>
+                </div> 
+                <div class="sec2-overlay p-1 d-flex justify-content-center align-items-center  position-absolute bg-transparent text-white ">
+                    <p class="text-center">Discover the Collection</p>
+                </div>
+            </div>
+            <div class="section3 d-flex justify-content-end align-items-center ">
+                <video class=" object-fit-cover " autoplay loop plays-inline id="BGVideo2">
+                    <source src="lv media/vid2.mp4" type="video/mp4">
+                </video>
+                <div class="sec3-head d-flex justify-content-center align-items-center position-absolute text-white">
+                    <h2>Men’s Spring-Summer 2024 Pre-Collection</h2>
+                </div> 
+                <div class="sec3-overlay p-1 d-flex justify-content-center align-items-center  position-absolute bg-transparent text-white ">
+                    <p class="text-center">Discover the Collection</p>
+                </div>
+            </div>
+            <div class="section4 d-flex justify-content-center align-items-end  ">
+                <div class="sec4-head d-flex justify-content-center align-items-center position-absolute text-white">
+                    <h2>Louis Vuitton Services</h2>
+                </div> 
+                <div class="sec4-overlay p-1 d-flex justify-content-center align-items-center  position-absolute bg-transparent text-white ">
+                    <p class="text-center">Discover the Collection</p>
+                </div>
+            </div>
         </div>
+        <!DOCTYPE html>
+    <div class="footer">
+      <div class="div-lv-footer">
+        <div class="section">
+          <div class="help">HELP</div>
+          <div class="overlap">
+            <p class="list-item-a-client">A Client Advisor is available at</p>
+            <div class="list-item-link"><div class="text-wrapper">1800 103 9988</div></div>
+          </div>
+          <div class="list-item-you-can">. You can also</div>
+          <div class="div-wrapper"><div class="div">chat</div></div>
+          <div class="overlap-group">
+            <div class="list-item-or">or</div>
+            <div class="list-item-link-2"><div class="text-wrapper-2">email us</div></div>
+          </div>
+          <div class="list-item">.</div>
+          <div class="list-item-link-FAQ-s">FAQ&#39;s</div>
+          <div class="list-item-link-3">Product Care</div>
+          <div class="list-item-link-4">Stores</div>
+        </div>
+        <div class="section-2">
+          <div class="services">SERVICES</div>
+          <div class="list-item-link-5">Repairs</div>
+          <div class="list-item-link-6">Personalisation</div>
+          <div class="list-item-link-art">Art of Gifting</div>
+          <div class="list-item-link-7">Download our Apps</div>
+        </div>
+        <div class="section-3">
+          <div class="about-louis-vuitton">ABOUT LOUIS VUITTON</div>
+          <div class="list-item-link-8">Fashion Shows</div>
+          <div class="list-item-link-arts">Arts &amp; Culture</div>
+          <div class="list-item-link-la">La Maison</div>
+          <div class="list-item-link-9">Sustainability</div>
+          <div class="list-item-link-10">Latest News</div>
+          <div class="list-item-link-11">Careers</div>
+          <div class="list-item-link-12">Foundation Louis Vuitton</div>
+        </div>
+        <div class="section-4">
+          <div class="connect">CONNECT</div>
+          <div class="list-item-link-13"><div class="text-wrapper-3">Sign up</div></div>
+          <p class="list-item-for-first">for first access to latest collections, </p>
+          <div class="list-item-videos">campaigns and videos.</div>
+          <div class="list-item-button">Follow Us</div>
+        </div>
+      </div>
+      <div class="list-item-button-2">Sitemap</div>
+      <div class="list-item-link-legal">Legal &amp; Privacy</div>
+      <svg class="svg1" width="152" height="16" viewBox="0 0 152 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M68.137 0.52298L71.953 9.72798L75.769 0.52298H78.494L72.246 15.62L71.953 15.914L71.659 15.62L65.411 0.52298H68.137ZM54.425 0.52298C55.893 0.52298 57.285 1.28998 58.052 2.40998L56.585 3.87798H56.123C55.819 3.22798 55.15 2.82998 54.425 2.82998C53.562 2.82998 52.753 3.53998 52.705 4.44398C52.67 5.12398 52.982 5.54898 53.545 5.91198C54.151 6.30298 54.399 6.46598 55.222 6.91798C56.119 7.41098 58.388 8.37798 58.388 10.923C58.388 13.432 56.291 15.766 53.586 15.766C53.239 15.766 52.61 15.727 52.14 15.619C50.815 15.298 50.011 14.797 49.142 13.774L51.029 11.845L51.679 12.39C51.972 12.62 52.616 13.083 53.229 13.166C54.475 13.335 55.311 12.511 55.473 11.698C55.602 11.056 55.439 10.098 54.404 9.60198C54.404 9.60198 52.538 8.56498 51.72 8.09198C50.887 7.60998 50.001 6.29398 50.001 4.71698C50.001 3.54298 50.539 2.40598 51.406 1.61398C52.076 0.99998 52.995 0.52298 54.425 0.52298ZM139.17 0.22998L148.94 9.99998V0.81698L149.234 0.52298H151.163L151.457 0.81698V15.619H150.995L141.393 6.01698V15.326L141.099 15.619H139.17L138.877 15.326V0.52298L139.17 0.22998ZM110.363 0.52298V2.74598L110.069 3.03898H107.847V15.619H105.331V3.03898H102.815V0.81698L103.109 0.52298H110.363ZM119.588 0.52298V2.74598L119.294 3.03898H117.072V15.619H114.556V3.03898H112.04V0.81698L112.334 0.52298H119.588ZM3.016 0.52298V13.103H8.048V15.619H0.5V0.81698L0.793 0.52298H3.016ZM17.273 0.52298C19.2749 0.52298 21.1947 1.31821 22.6102 2.73374C24.0258 4.14926 24.821 6.06913 24.821 8.07098C24.821 10.0728 24.0258 11.9927 22.6102 13.4082C21.1947 14.8237 19.2749 15.619 17.273 15.619C15.2711 15.619 13.3513 14.8237 11.9358 13.4082C10.5202 11.9927 9.725 10.0728 9.725 8.07098C9.725 6.06913 10.5202 4.14926 11.9358 2.73374C13.3513 1.31821 15.2711 0.52298 17.273 0.52298ZM128.813 0.52298C130.815 0.52298 132.735 1.31821 134.15 2.73374C135.566 4.14926 136.361 6.06913 136.361 8.07098C136.361 10.0728 135.566 11.9927 134.15 13.4082C132.735 14.8237 130.815 15.619 128.813 15.619C126.811 15.619 124.891 14.8237 123.476 13.4082C122.06 11.9927 121.265 10.0728 121.265 8.07098C121.265 6.06913 122.06 4.14926 123.476 2.73374C124.891 1.31821 126.811 0.52298 128.813 0.52298ZM30.398 0.52298L30.691 0.81698V10.587C30.691 11.2543 30.9561 11.8942 31.4279 12.3661C31.8998 12.8379 32.5397 13.103 33.207 13.103C33.8743 13.103 34.5142 12.8379 34.9861 12.3661C35.4579 11.8942 35.723 11.2543 35.723 10.587V0.81698L36.017 0.52298H37.946L38.239 0.81698V10.587C38.239 11.9215 37.7088 13.2015 36.7652 14.1451C35.8215 15.0888 34.5416 15.619 33.207 15.619C31.8724 15.619 30.5925 15.0888 29.6488 14.1451C28.7052 13.2015 28.175 11.9215 28.175 10.587V0.81698L28.469 0.52298H30.398ZM45.787 0.52298V15.326L45.493 15.619H43.271V0.81698L43.564 0.52298H45.787ZM83.233 0.52298L83.526 0.81698V10.587C83.526 11.2543 83.7911 11.8942 84.2629 12.3661C84.7348 12.8379 85.3747 13.103 86.042 13.103C86.7093 13.103 87.3492 12.8379 87.8211 12.3661C88.2929 11.8942 88.558 11.2543 88.558 10.587V0.81698L88.852 0.52298H90.78L91.074 0.81698V10.587C91.074 11.9215 90.5438 13.2015 89.6002 14.1451C88.6565 15.0888 87.3766 15.619 86.042 15.619C84.7074 15.619 83.4275 15.0888 82.4838 14.1451C81.5402 13.2015 81.01 11.9215 81.01 10.587V0.81698L81.304 0.52298H83.233ZM98.622 0.52298V15.326L98.328 15.619H96.106V0.81698L96.399 0.52298H98.622ZM17.272 3.03998C16.6111 3.04005 15.9567 3.17028 15.3462 3.42325C14.7356 3.67622 14.1809 4.04696 13.7136 4.51432C12.7699 5.45819 12.2399 6.73828 12.24 8.07298C12.2401 9.40768 12.7705 10.6877 13.7143 11.6313C14.6582 12.575 15.9383 13.1051 17.273 13.105C18.6077 13.105 19.8877 12.5748 20.8315 11.631C21.7753 10.6872 22.3055 9.40718 22.3055 8.07248C22.3055 6.73778 21.7753 5.45774 20.8315 4.51397C19.8877 3.57019 18.6077 3.03998 17.273 3.03998H17.272ZM128.813 3.03998C127.478 3.03998 126.198 3.57019 125.254 4.51397C124.311 5.45774 123.781 6.73778 123.781 8.07248C123.781 9.40718 124.311 10.6872 125.254 11.631C126.198 12.5748 127.478 13.105 128.813 13.105C130.148 13.105 131.428 12.5748 132.372 11.631C133.315 10.6872 133.846 9.40718 133.846 8.07248C133.846 6.73778 133.315 5.45774 132.372 4.51397C131.428 3.57019 130.148 3.03998 128.813 3.03998Z" fill="#19110B"/>
+      </svg>        
+      <div class="list-item-link-india-2"><div class="text-wrapper-4">India</div></div>
+      <p class="p">Full Name and Address of the Manufacturer</p>
+      <p class="louis-vuitton">
+        Louis Vuitton Malletier SAS<br />2 Rue du Pont Neuf<br />75034 Paris CEDEX 01<br />FRANCE
+      </p>
+      <p class="text-wrapper-5">Please refer to the product label for specific country of origin for each product.</p>
+      <p class="text-wrapper-6">Full Name and Address of the Importer</p>
+      <p class="louis-vuitton-india">
+        Louis Vuitton India Retail Private Limited<br />901A Ninth Floor, Time Tower, MG Road<br />Gurgaon, Haryana -
+        122002<br />INDIA
+      </p>
+    </div>
+
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
